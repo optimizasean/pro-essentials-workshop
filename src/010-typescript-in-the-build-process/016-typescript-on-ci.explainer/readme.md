@@ -13,3 +13,5 @@ This means that even though you're not using TypeScript to emit JavaScript, you'
 I've written a GitHub action workflow which can run on CI. Take a look at each comment in `.github/workflows/ci.yml` and see what's going on.
 
 This can run on each commit to ensure our code is type-safe.
+
+NOTE: This basically uses github actions to double check items on the backed through tsc for type checking before merges since CI will catch it
