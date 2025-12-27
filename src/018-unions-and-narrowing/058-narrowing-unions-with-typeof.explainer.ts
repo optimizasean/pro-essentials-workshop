@@ -7,3 +7,5 @@ const convertTime = (time: string | number) => {
 
   console.log(time); // string | number
 };
+
+//Internally can identify types in sub scopes based on narrowing without having to redefine variables or types
