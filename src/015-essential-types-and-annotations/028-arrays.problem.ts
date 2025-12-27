@@ -3,7 +3,7 @@
 // How do we type 'items' in the ShoppingCart?
 type ShoppingCart = {
   userId: string;
-  items: Array<string>;
+  items: string[]
 };
 
 // TESTS
