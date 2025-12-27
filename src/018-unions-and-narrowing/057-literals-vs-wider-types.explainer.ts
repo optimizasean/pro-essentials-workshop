@@ -1,5 +1,5 @@
 const getResolvedIconSize = (
-  iconSize: "small" | "medium" | "large" | string,
+  iconSize: "small" | "medium" | "large" | (string & {}),
 ) => {
   switch (iconSize) {
     case "small":
@@ -14,4 +14,7 @@ const getResolvedIconSize = (
 };
 
 // It doesn't give you autocomplete for 'small', 'medium', or 'large'!
-getResolvedIconSize("awdawd");
+//getResolvedIconSize("awdawd");
+
+//Valid as everything is string - basically drops all the string literals since everything is string so all values pass
+//Mix with empty object and autocomplete returns? Magic TypeScript thing...
