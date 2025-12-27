@@ -14,7 +14,7 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": true, // This doesn't output Javascript (not wanted since VITE handles the bundling and tsc would only be duplicating effort by also producing those files elsewhere - but we still need TSV since VITE does no type checking)
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
