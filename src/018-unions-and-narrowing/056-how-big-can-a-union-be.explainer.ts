@@ -26,4 +26,7 @@ type Alphabet =
   | "y"
   | "z";
 
-type TooBig = `${Alphabet}${Alphabet}${Alphabet}${Alphabet}`;
+//type TooBig = `${Alphabet}${Alphabet}${Alphabet}${Alphabet}`;
+type AlmostTooBig = `${Alphabet}${Alphabet}${Alphabet}`;
+
+//Can do extroadinarily large Unions...hope thats never necessary xD
