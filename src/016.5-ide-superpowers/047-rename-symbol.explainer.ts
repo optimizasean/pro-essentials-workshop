@@ -11,3 +11,5 @@ const users = [
 const filterUsersById = (id: string) => {
   return users.filter((user) => user.id === id);
 };
+
+// NOTE CTRL D after highlight selects next occurence for multi cursor
