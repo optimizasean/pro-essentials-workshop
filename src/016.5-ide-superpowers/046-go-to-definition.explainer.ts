@@ -19,3 +19,5 @@ type Example = PropertyKey;
 // It can also take you to mysterious places:
 
 document;
+
+//NOTE CTRL Click on items in VS Code and it will send you to the origin of where they were defined!
