@@ -13,3 +13,4 @@ const filterUsersById = (id: string) => {
 };
 
 // NOTE CTRL D after highlight selects next occurence for multi cursor
+///NOTE Can click and rename or click and use F2 key for known symbols
