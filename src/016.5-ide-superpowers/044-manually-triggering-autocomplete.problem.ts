@@ -20,3 +20,5 @@ document.addEventListener(
     console.log(event);
   },
 );
+
+//NOTE Use CTRL SPACE in VS Code for "search" tool or just type a letter if you know what it starts with and will start filtering
