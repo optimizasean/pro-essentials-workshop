@@ -12,3 +12,6 @@
 You'll notice that if you make a TypeScript error in your code, the dev server will still run.
 
 This is because the dev server _doesn't_ run the TypeScript command line `tsc` on your code. It just runs the dev server.
+
+NOTE:
+Looking at the various elements of enforcing types and opinions on setup of forced checking (with blocks) and checking (without forced blocks through vite checker). Shown over 017 examples 1, 2, and 3.
