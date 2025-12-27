@@ -3,3 +3,5 @@ const run = (message: string) => {
 };
 
 run("Hello!");
+
+// Use tsc --watch to see changes live on save!
