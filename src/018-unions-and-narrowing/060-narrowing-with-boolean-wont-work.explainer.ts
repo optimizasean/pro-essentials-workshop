@@ -1,8 +1,8 @@
 import { expect, it } from "vitest";
 
 function validateUsername(username: string | null): boolean {
-  // Why isn't this working?
-  const isUsernameOK = Boolean(username);
+  // Why isn't this working? no can use Boolean - function doesn't "behave" as typescript won't see the bool unlike when we use the operator
+  const isUsernameOK = !!username;
 
   if (isUsernameOK) {
     return username.length > 5;
