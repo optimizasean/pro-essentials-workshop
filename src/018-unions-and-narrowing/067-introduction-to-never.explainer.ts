@@ -8,12 +8,15 @@ const getNever = () => {
 const fn = (input: never) => {};
 
 // Nothing is assignable to never!
-fn("hello");
-fn(42);
-fn(true);
-fn({});
-fn([]);
-fn(() => {});
+fn("hello" as never);
+fn(42 as never);
+fn(true as never);
+fn({} as never);
+fn([] as never);
+//fn(() => {});
+
+//Casted the others (never do this) but a void cannot be casted to never
+//Don't actually do this
 
 // Except for never itself!
 
