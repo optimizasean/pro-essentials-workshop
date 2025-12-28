@@ -1,5 +1,7 @@
 interface Scores {
   [subject: string]: number;
+  math: number;
+  english: number;
   science: number;
 }
 
