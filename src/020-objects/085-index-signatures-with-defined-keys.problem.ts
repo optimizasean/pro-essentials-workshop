@@ -1,4 +1,5 @@
-interface Scores extends Record<string, number> {
+interface Scores {
+  [subject: string]: number;
   science: number;
 }
 
