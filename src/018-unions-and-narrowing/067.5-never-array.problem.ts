@@ -1,8 +1,8 @@
 const shoppingCart = {
-  items: [],
+  items: [] as string[],
 };
 
 console.log(shoppingCart.items);
 
-shoppingCart.items.push("Apple" as never);
-shoppingCart.items.push("Banana" as never);
+shoppingCart.items.push("Apple");
+shoppingCart.items.push("Banana");
