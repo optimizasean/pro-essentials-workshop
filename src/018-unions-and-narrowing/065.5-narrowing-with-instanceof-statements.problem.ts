@@ -14,5 +14,6 @@ try {
   if (error instanceof Error) {
     console.error(error.message);
   }
+  //In case someone throw "string thing" instead of an Error
   throw new Error("dang");
 }
