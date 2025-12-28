@@ -23,6 +23,7 @@ function calculateArea(shape: Shape) {
       return shape.sideLength * shape.sideLength;
     }
   }
+  /// switch true is basically a fancy "case" if.
 }
 
 it("Should calculate the area of a circle", () => {
