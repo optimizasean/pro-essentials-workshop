@@ -1,11 +1,11 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 import { describe, expect, it } from "vitest";
 
-const isArrayOfStrings = (value: unknown): boolean => Array.isArray(value) && value.every((item) => typeof item === "string");
+const isArrayOfStrings = (value: unknown) => Array.isArray(value) && value.every((item) => typeof item === "string");
 
 const joinNames = (value: unknown) => {
   if (isArrayOfStrings(value)) {
-    return (<string[]>value).join(" ");
+    return value.join(" ");
   }
 
   throw new Error("Parsing error!");
@@ -13,7 +13,7 @@ const joinNames = (value: unknown) => {
 
 const createSections = (value: unknown) => {
   if (isArrayOfStrings(value)) {
-    return (<string[]>value).map((item) => `Section: ${item}`);
+    return value.map((item) => `Section: ${item}`);
   }
 
   throw new Error("Parsing error!");
