@@ -7,3 +7,5 @@ fn(true);
 fn({});
 fn([]);
 fn(() => {});
+
+//Note anything is assignable but type checking is still enabled - must narrow later before usage
