@@ -8,7 +8,8 @@ type User = {
 type UserWithoutPhoneNumber = Omit<User, "phoneNumber">;
 
 // But you CAN'T pick properties which don't exist
-type UserWithOnlyPhoneNumber = Pick<User, "phoneNumber">;
+//type UserWithOnlyPhoneNumber = Pick<User, "phoneNumber">;
+//Cannot pick what does not exist but omit can omit what doesn't exist
 
 // More information:
 
