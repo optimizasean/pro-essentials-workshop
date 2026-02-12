@@ -1,12 +1,12 @@
 type SearchParams = {
-  readonly q?: string;
-  readonly page?: number;
-  readonly pageSize?: number;
-  readonly sort?: string;
-  readonly order?: "asc" | "desc";
+  q?: string;
+  page?: number;
+  pageSize?: number;
+  sort?: string;
+  order?: "asc" | "desc";
 };
 
-const handleSearchParams = (search: SearchParams) => {
+const handleSearchParams = (search: Readonly<SearchParams>) => {
   // Do something with the search params
 
   // @ts-expect-error Should not be able to modify readonly
