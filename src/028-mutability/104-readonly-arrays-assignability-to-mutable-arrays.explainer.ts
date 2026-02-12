@@ -22,4 +22,7 @@ printNamesMutable(mutableNames);
 const readonlyNames = ["John", "Jane", "Mike"] as const;
 
 printNamesReadonly(readonlyNames);
-printNamesMutable(readonlyNames);
+//This errors as it is deeply readonly - removing as const makes it function
+//printNamesMutable(readonlyNames);
+const names = ["John", "Jane", "Mike"];
+printNamesMutable(names);
