@@ -3,6 +3,13 @@ import { expect, it } from "vitest";
 class CanvasNode {
   x: number;
   y: number;
+  
+  get position() { 
+    return {
+      x: this.x,
+      y: this.y
+    };
+  }
 
   constructor(position?: { x: number; y: number }) {
     this.x = position?.x ?? 0;
