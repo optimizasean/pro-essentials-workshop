@@ -1,7 +1,8 @@
 // Basic primitives do not have 'sufficient overlap'
 // with each other
 
-const num1 = "hello" as number;
+//Cannot convert types which have no properties in common
+//const num1 = "hello" as number;
 
 const num2 = "hello" as unknown as number;
 
@@ -20,7 +21,8 @@ const cat = {
   meow() {},
 };
 
-const dog1 = cat as Dog;
+//Cannot convert types which have no properties in common
+//const dog1 = cat as Dog;
 
 const dog2 = cat as unknown as Dog;
 
