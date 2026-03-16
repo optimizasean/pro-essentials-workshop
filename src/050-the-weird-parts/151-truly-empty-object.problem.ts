@@ -1,4 +1,7 @@
-const acceptOnlyEmptyObject = (input: Record<PropertyKey, never>) => {};
+declare const tag: unique symbol;
+type EmptyObject = { [tag]?: never };
+
+const acceptOnlyEmptyObject = (input: EmptyObject) => {};
 
 acceptOnlyEmptyObject({});
 
