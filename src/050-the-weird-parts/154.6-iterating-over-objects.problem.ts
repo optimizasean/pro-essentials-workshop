@@ -6,9 +6,9 @@ interface User {
 }
 
 function printUser(user: User) {
-  Object.keys(user).forEach((key) => {
-    console.log(user[key as keyof User])
-  });
+  for (const key in user) {
+    console.log(user[key as keyof User]);
+  }
 }
 
 it("Should log all the keys of the user", () => {
