@@ -7,7 +7,7 @@ interface FetchOptions {
 
 const myFetch = async (options: FetchOptions) => {};
 
-myFetch({
+const options: FetchOptions = {
   url: "/",
   method: "GET",
   headers: {
@@ -17,4 +17,6 @@ myFetch({
   search: new URLSearchParams({
     limit: "10",
   }),
-});
+};
+
+myFetch(options);
