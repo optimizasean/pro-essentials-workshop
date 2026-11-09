@@ -1,9 +1,9 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
-type PromiseFunc = () => Promise<any>;
+type PromiseFunc<TResult> = () => Promise<TResult>;
 
-const safeFunction = (func: PromiseFunc) => async () => {
+const safeFunction = <TResult>(func: PromiseFunc<TResult>) => async () => {
   try {
     const result = await func();
     return result;
