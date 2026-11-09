@@ -6,20 +6,22 @@ type ErrorShape = {
   };
 };
 
-type DataShape<TData> = 
+type DataId<T> = {
+  [K in keyof T]: T[K]
+};
+
+type DataShape<TData extends object> =
   | {
-      data: TData;
+      data: DataId<{ id: string } & TData>
     }
   | ErrorShape;
 
 type UserDataShape = DataShape<{
-  id: string;
   name: string;
   email: string;
 }>;
 
 type PostDataShape = DataShape<{
-  id: string;
   title: string;
   body: string;
 }>;
